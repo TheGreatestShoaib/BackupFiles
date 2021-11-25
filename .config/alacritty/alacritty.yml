@@ -1,0 +1,371 @@
+# Window Customization
+
+window:
+  dimensions:
+    columns: 140
+    lines: 38
+  padding:
+    x: 8
+    y: 8
+  decorations: full
+scrolling:
+  history: 10000
+  multiplier: 5
+background_opacity: 0.92
+window.dynamic_title: true
+
+# Font Customization
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+  size: 10
+  offset:
+
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  use_thin_strokes: false
+  debug:
+    persistent_logging: false
+draw_bold_text_with_bright_colors: false
+shell:
+  program: /usr/bin/zsh
+
+schemes:
+  dracula:
+    &dracula
+    primary:
+      background: '0x282a36'
+      foreground: '0xf8f8f2'
+    cursor:
+      text: CellBackground
+      cursor: CellForeground
+    vi_mode_cursor:
+      text: CellBackground
+      cursor: CellForeground
+    search:
+      matches:
+        foreground: '0x44475a'
+        background: '0x50fa7b'
+      focused_match:
+        foreground: '0x44475a'
+        background: '0xffb86c'
+      bar:
+        background: '0x282a36'
+        foreground: '0xf8f8f2'
+    line_indicator:
+      foreground: None
+      background: None
+    selection:
+      text: CellForeground
+      background: '0x44475a'
+
+    bright:
+      black: '0x4d4d4d'
+      red: '0xff6e67'
+      green: '0x5af78e'
+      yellow: '0xf4f99d'
+      blue: '0xcaa9fa'
+      magenta: '0xff92d0'
+      cyan: '0x9aedfe'
+      white: '0xe6e6e6'
+    dim:
+      black: '0x14151b'
+      red: '0xff2222'
+      green: '0x1ef956'
+      yellow: '0xebf85b'
+      blue: '0x4d5b86'
+      magenta: '0xff46b0'
+      cyan: '0x59dffc'
+      white: '0xe6e6d1'
+
+  ayu-dark:
+    &ayu-dark
+    primary:
+      background: '0x0A0E14'
+      foreground: '0xB3B1AD'
+
+    # Normal colors
+    normal:
+      black: '0x01060E'
+      red: '0xEA6C73'
+      green: '0x91B362'
+      yellow: '0xF9AF4F'
+      blue: '0x53BDFA'
+      magenta: '0xFAE994'
+      cyan: '0x90E1C6'
+      white: '0xC7C7C7'
+
+    # Bright colors
+    bright:
+      black: '0x686868'
+      red: '0xF07178'
+      green: '0xC2D94C'
+      yellow: '0xFFB454'
+      blue: '0x59C2FF'
+      magenta: '0xFFEE99'
+      cyan: '0x95E6CB'
+      white: '0xFFFFFF'
+
+  one-dark:
+    &one-dark
+    primary:
+      background: '0x1e2127'
+      foreground: '0xabb2bf'
+
+    # Normal colors
+    normal:
+      black: '0x1e2127'
+      red: '0xe06c75'
+      green: '0x98c379'
+      yellow: '0xd19a66'
+      blue: '0x61afef'
+      magenta: '0xc678dd'
+      cyan: '0x56b6c2'
+      white: '0xabb2bf'
+
+    # Bright colors
+    bright:
+      black: '0x5c6370'
+      red: '0xe06c75'
+      green: '0x98c379'
+      yellow: '0xd19a66'
+      blue: '0x61afef'
+      magenta: '0xc678dd'
+      cyan: '0x56b6c2'
+      white: '0xffffff'
+
+  nord:
+    &nord
+    primary:
+      background: '0x2E3440'
+      foreground: '0xD8DEE9'
+
+    # Normal colors
+    normal:
+      black: '0x3B4252'
+      red: '0xBF616A'
+      green: '0xA3BE8C'
+      yellow: '0xEBCB8B'
+      blue: '0x81A1C1'
+      magenta: '0xB48EAD'
+      cyan: '0x88C0D0'
+      white: '0xE5E9F0'
+
+    # Bright colors
+    bright:
+      black: '0x4C566A'
+      red: '0xBF616A'
+      green: '0xA3BE8C'
+      yellow: '0xEBCB8B'
+      blue: '0x81A1C1'
+      magenta: '0xB48EAD'
+      cyan: '0x8FBCBB'
+      white: '0xECEFF4'
+
+  falcon:
+    &falcon
+    primary:
+      background: '0x020221'
+      foreground: '0xb4b4b9'
+
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '0x020221'
+      cursor: '0xffe8c0'
+
+    # Normal colors
+    normal:
+      black: '0x000004'
+      red: '0xff3600'
+      green: '0x718e3f'
+      yellow: '0xffc552'
+      blue: '0x635196'
+      magenta: '0xff761a'
+      cyan: '0x34bfa4'
+      white: '0xb4b4b9'
+
+    # Bright colors
+    bright:
+      black: '0x020221'
+      red: '0xff8e78'
+      green: '0xb1bf75'
+      yellow: '0xffd392'
+      blue: '0x99a4bc'
+      magenta: '0xffb07b'
+      cyan: '0x8bccbf'
+      white: '0xf8f8ff'
+
+  gotham:
+    &gotham
+    primary:
+      background: '0x0a0f14'
+      foreground: '0x98d1ce'
+
+    # Normal colors
+    normal:
+      black: '0x0a0f14'
+      red: '0xc33027'
+      green: '0x26a98b'
+      yellow: '0xedb54b'
+      blue: '0x195465'
+      magenta: '0x4e5165'
+      cyan: '0x33859d'
+      white: '0x98d1ce'
+
+    # Bright colors
+    bright:
+      black: '0x10151b'
+      red: '0xd26939'
+      green: '0x081f2d'
+      yellow: '0x245361'
+      blue: '0x093748'
+      magenta: '0x888ba5'
+      cyan: '0x599caa'
+      white: '0xd3ebe9'
+
+  tokyo-night-storm:
+    &tokyo-night-strom
+    primary:
+      background: '0x24283b'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black: '0x32344a'
+      red: '0xf7768e'
+      green: '0x9ece6a'
+      yellow: '0xe0af68'
+      blue: '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan: '0x449dab'
+      white: '0x9699a8'
+
+    # Bright colors
+    bright:
+      black: '0x444b6a'
+      red: '0xff7a93'
+      green: '0xb9f27c'
+      yellow: '0xff9e64'
+      blue: '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan: '0x0db9d7'
+      white: '0xacb0d0'
+
+  tokyo-night:
+    &tokyo-night
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black: '0x32344a'
+      red: '0xf7768e'
+      green: '0x9ece6a'
+      yellow: '0xe0af68'
+      blue: '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan: '0x449dab'
+      white: '0x787c99'
+
+    # Bright colors
+    bright:
+      black: '0x444b6a'
+      red: '0xff7a93'
+      green: '0xb9f27c'
+      yellow: '0xff9e64'
+      blue: '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan: '0x0db9d7'
+      white: '0xacb0d0'
+
+  material:
+    &material
+    primary:
+      background: '0x1e282d'
+      foreground: '0xc4c7d1'
+
+    # Normal colors
+    normal:
+      black: '0x666666'
+      red: '0xeb606b'
+      green: '0xc3e88d'
+      yellow: '0xf7eb95'
+      blue: '0x80cbc4'
+      magenta: '0xff2f90'
+      cyan: '0xaeddff'
+      white: '0xffffff'
+
+    # Bright colors
+    bright:
+      black: '0xff262b'
+      red: '0xeb606b'
+      green: '0xc3e88d'
+      yellow: '0xf7eb95'
+      blue: '0x7dc6bf'
+      magenta: '0x6c71c4'
+      cyan: '0x35434d'
+      white: '0xffffff'
+
+  doom-one:
+    &doom-one
+    primary:
+      background: '0x282c34'
+      foreground: '0xbbc2cf'
+
+    # Normal colors
+    normal:
+      black: '0x282c34'
+      red: '0xff6c6b'
+      green: '0x98be65'
+      yellow: '0xecbe7b'
+      blue: '0x51afef'
+      magenta: '0xc678dd'
+      cyan: '0x46d9ff'
+      white: '0xbbc2cf'
+
+colors:
+  # Default colors
+  primary:
+    background: '#282c34'
+    foreground: '#abb2bf'
+
+  # Normal colors
+  normal:
+    # NOTE: Use '#131613' for the `black` color if you'd like to see
+    # black text on the background.
+    black: '#282c34'
+    red: '#e06c75'
+    green: '#98c379'
+    yellow: '#d19a66'
+    blue: '#61afef'
+    magenta: '#c678dd'
+    cyan: '#56b6c2'
+    white: '#abb2bf'
+
+  # Bright colors
+  bright:
+    black: '#5c6370'
+    red: '#e06c75'
+    green: '#98c379'
+    yellow: '#d19a66'
+    blue: '#61afef'
+    magenta: '#c678dd'
+    cyan: '#56b6c2'
+    white: '#ffffff'
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
